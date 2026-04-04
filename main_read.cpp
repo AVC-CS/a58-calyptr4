@@ -10,17 +10,19 @@ int main()
     string stuName;
     ifstream ifs;
 
-    // TODO: open "students.txt" for reading
-
-    // TODO: check if file opened successfully; print error and exit if not
-
-    // TODO: read M from ifs, print "Total M students"
-
-    for (int i = 0; i < M; i++)
-    {
-        // TODO: read stuName, score1, score2 from ifs
-        // TODO: compute sum = score1 + score2, avg = sum / 2.0
-        // TODO: print Student Name, score1, score2, Sum, Avg
+    ifs.open("Student.txt");
+    if (!ifs.is_open()){
+        cerr << "Error opening file!" << endl;
+        return 1;
+    }
+    ifs >> M;
+    cout << "Total: " << M << " students" << endl;
+    
+    for (int i = 0; i < M; i++){
+        ifs >> stuName >> score1 >> score2;
+        sum = score1 + score2;
+        avg = sum / 2.0;
+        cout << "Student Name: " << stuName << " score 1: " << score1 << " score 2: " << score2 << " Sum: " << sum << " Avg: " << avg << endl;
     }
     ifs.close();
     return 0;
