@@ -22,7 +22,7 @@ int main()
         ifs >> stuName >> score1 >> score2;
         sum = score1 + score2;
         avg = sum / 2.0;
-        cout << "Student Name: " << stuName << " score 1: " << score1 << " score 2: " << score2 << " Sum: " << sum << " Avg: " << avg << endl;
+        cout << "Student Name: " << stuName << "\tscore 1: " << score1 << "\tscore 2: " << score2 << "\tSum: " << sum << "\tAvg: " << avg << endl;
     }
     ifs.close();
     return 0;

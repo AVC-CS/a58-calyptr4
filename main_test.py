@@ -32,6 +32,8 @@ def test_main_2():
         r'Student Name:\s*Kathy.*score1:\s*100.*score2:\s*90.*Sum:\s*190.*Avg:\s*95',
         r'Student Name:\s*Mary.*score1:\s*100.*score2:\s*100.*Sum:\s*200.*Avg:\s*100',
         r'Student Name:\s*Hammond.*score1:\s*100.*score2:\s*90.*Sum:\s*190.*Avg:\s*95',
+        r'Student Name:\s*Maxine.*score1:\s*90.*score2:\s*90.*Sum:\s*180.*Avg:\s*90',
+        r'Student Name:\s*Heather.*score1:\s*100.*score2:\s*90.*Sum:\s*190.*Avg:\s*95',
     ], content)
 
 @pytest.mark.T3
